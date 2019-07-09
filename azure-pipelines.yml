@@ -27,22 +27,7 @@ pr:
 pool:
   vmImage: ubuntu-16.04
 
-variables:
-  FIELD: auto
-  BIGNUM: auto
-  SCALAR: auto
-  ENDOMORPHISM: no
-  STATICPRECOMPUTATION: yes
-  ASM: no
-  BUILD: check
-  EXTRAFLAGS: ''
-  HOST: ''
-  ECDH: no
-  RECOVERY: no
-  EXPERIMENTAL: no
-  JNI: no
-  GUAVA_URL: https://search.maven.org/remotecontent?filepath=com/google/guava/guava/18.0/guava-18.0.jar
-  GUAVA_JAR: src/java/guava/guava-18.0.jar
+
 
 jobs:
 - job: clang
