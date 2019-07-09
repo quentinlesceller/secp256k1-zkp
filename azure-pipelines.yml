@@ -211,10 +211,10 @@ jobs:
         JNI: yes
         ECDH: yes
         EXPERIMENTAL: yes                           
-    steps:
-      - script: sudo apt install -y gcc-multilib
-        displayName: Install dependencies
-      - template: '.ci/test.yml'
+  steps:
+    - script: sudo apt install -y gcc-multilib
+      displayName: Install dependencies
+    - template: '.ci/test.yml'
 - job: gcc-with-endomorphism
   variables:
     HOST: i686-linux-gnu
