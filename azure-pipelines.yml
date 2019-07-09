@@ -24,8 +24,6 @@ pr:
   branches:
     include: ['*']
 
-pool:
-  vmImage: ubuntu-16.04
 
 jobs:
 - job: Linux
