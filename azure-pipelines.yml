@@ -28,16 +28,5 @@ pool:
   vmImage: ubuntu-16.04
 
 jobs:
-- job: clang
-  variables:
-    HOST: i686-linux-gnu
-    ENDOMORPHISM: yes
-  strategy:
-    matrix:
-      job1:
-        SCALAR: 32bit
-        RECOVERY: yes                         
-  steps:
-    - script: sudo apt install -y gcc-multilib libgmp-dev:i386
-      displayName: Install dependencies
-    - template: '.ci/test.yml'
+- job: Linux
+  script: echo coucou
