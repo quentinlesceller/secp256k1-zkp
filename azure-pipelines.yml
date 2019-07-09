@@ -132,8 +132,8 @@ jobs:
       displayName: Install dependencies
     - template: '.ci/test.yml'
 - job: clang
-    variables:
-      HOST: i686-linux-gnu
+  variables:
+    HOST: i686-linux-gnu
   strategy:
     matrix:
       job1:
