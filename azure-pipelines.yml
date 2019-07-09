@@ -27,4 +27,5 @@ pr:
 
 jobs:
 - job: Linux
-  script: echo coucou
+  steps:
+    - script: echo coucou
