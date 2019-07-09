@@ -42,7 +42,7 @@ variables:
   GUAVA_JAR: src/java/guava/guava-18.0.jar
 
 jobs:
-- job: clang-with-endomorphism
+- job: clang_with_endomorphism
   pool:
     vmImage: ubuntu-16.04
   variables:
@@ -215,7 +215,7 @@ jobs:
     - script: sudo apt install -y gcc-multilib
       displayName: Install dependencies
     - template: '.ci/test.yml'
-- job: gcc-with-endomorphism
+- job: gcc_with_endomorphism
   variables:
     HOST: i686-linux-gnu
     ENDOMORPHISM: yes
