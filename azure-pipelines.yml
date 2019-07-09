@@ -128,8 +128,7 @@ jobs:
         ECDH: yes
         EXPERIMENTAL: yes                            
   steps:
-    - script: |
-      sudo apt install -y gcc-multilib libgmp-dev:i386
+    - script: sudo apt install -y gcc-multilib libgmp-dev:i386
       displayName: Install dependencies
     - template: '.ci/test.yml'
 - job: clang
@@ -214,8 +213,7 @@ jobs:
         ECDH: yes
         EXPERIMENTAL: yes                           
     steps:
-      - script: |
-        sudo apt install -y gcc-multilib
+      - script: sudo apt install -y gcc-multilib
         displayName: Install dependencies
       - template: '.ci/test.yml'
 - job: gcc-with-endomorphism
@@ -301,8 +299,7 @@ jobs:
         ECDH: yes
         EXPERIMENTAL: yes                    
   steps:
-    - script: |
-      sudo apt install -y gcc-multilib
+    - script: sudo apt install -y gcc-multilib
       displayName: Install dependencies
     - template: '.ci/test.yml'
 
@@ -388,7 +385,6 @@ jobs:
         ECDH: yes
         EXPERIMENTAL: yes                   
   steps:
-    - script: |
-      sudo apt install -y gcc-multilib libgmp-dev:i386
+    - script: sudo apt install -y gcc-multilib libgmp-dev:i386
       displayName: Install dependencies
     - template: '.ci/test.yml'
